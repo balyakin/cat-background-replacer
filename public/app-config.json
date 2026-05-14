@@ -1,0 +1,25 @@
+{
+  "openRouter": {
+    "primaryBackgroundModel": {
+      "id": "google/gemini-2.5-flash-image",
+      "modalities": ["image", "text"]
+    },
+    "fallbackBackgroundModel": {
+      "id": "black-forest-labs/flux.2-klein-4b",
+      "modalities": ["image"]
+    },
+    "secondaryFallbackBackgroundModel": {
+      "id": "sourceful/riverflow-v2-fast",
+      "modalities": ["image"]
+    },
+    "imageSize": "1K",
+    "timeoutMs": 60000
+  },
+  "camera": {
+    "enabled": true
+  },
+  "imageProcessing": {
+    "maxSourceSidePx": 2000,
+    "jpegQuality": 0.88
+  }
+}

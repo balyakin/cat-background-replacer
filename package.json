@@ -1,0 +1,33 @@
+{
+  "name": "cat-background-replacer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "generate-icons": "node scripts/create-icons.mjs"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
+    "heic2any": "^0.0.4",
+    "idb-keyval": "^6.2.2",
+    "lucide-react": "^0.468.0",
+    "onnxruntime-web": "^1.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-easy-crop": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.0"
+  }
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=KotoFon PWA static preview server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/projects/cat-background-replacer
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=5174
+EnvironmentFile=-/etc/kotofon.env
+ExecStart=/usr/bin/node /root/projects/cat-background-replacer/server.mjs
+Restart=always
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
